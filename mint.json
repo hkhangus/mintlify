@@ -51,6 +51,12 @@
       "name": "Nimbus",
       "icon": "cloud",
       "url": "https://getnimbus.io/"
+    },
+    {
+      "name": "API Reference",
+      "openapi": "/api-reference/openapi.json",
+      "url": "api-reference",
+      "icon": "square-terminal"
     }
   ],
   "navigation": [
