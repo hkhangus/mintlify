@@ -46,6 +46,11 @@
       "name": "Blog",
       "icon": "newspaper",
       "url": "https://mintlify.com/blog"
+    },
+    {
+      "name": "Nimbus",
+      "icon": "cloud",
+      "url": "https://getnimbus.io/"
     }
   ],
   "navigation": [
