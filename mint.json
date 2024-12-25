@@ -5,6 +5,7 @@
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
   },
+  "openapi": "https://app.premai.io/api/schema/",
   "favicon": "/favicon.svg",
   "colors": {
     "primary": "#0D9373",
@@ -86,7 +87,8 @@
         "api-reference/endpoint/create",
         "api-reference/endpoint/delete",
         "api-reference/endpoint/get-prepare",
-        "api-reference/endpoint/get-sui"
+        "api-reference/endpoint/get-sui",
+        "api-reference/endpoint/get-v1traces"
       ]
     }
   ],
