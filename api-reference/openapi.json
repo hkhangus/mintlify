@@ -1397,6 +1397,89 @@
           }
         }
       }
+    },
+    "/tokens/sui/price": {
+      "get": {
+        "summary": "Retrieve SUI Token Price",
+        "description": "Fetches the price of one or more SUI tokens for specified addresses and an optional timestamp.",
+        "tags": ["Token"],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "addresses",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "0x0000000000000000000000000000000000000000000000000000000000000002::sui::SUI",
+            "description": "Comma-separated list of SUI token addresses. Maximum 50 tokens."
+          },
+          {
+            "in": "query",
+            "name": "timestamp",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Optional timestamp to get the price at a specific time."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response with SUI token price information.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "contract_address": {
+                            "type": "string",
+                            "description": "The contract address of the SUI token."
+                          },
+                          "symbol": {
+                            "type": "string",
+                            "description": "The symbol of the SUI token."
+                          },
+                          "price": {
+                            "type": "number",
+                            "description": "The price of the SUI token."
+                          },
+                          "last24hPrice": {
+                            "type": "number",
+                            "description": "The price of the SUI token in the last 24 hours."
+                          },
+                          "timestamp": {
+                            "type": "number",
+                            "description": "The unix timestamp of price."
+                          },
+                          "decimals": {
+                            "type": "integer",
+                            "description": "The number of decimals for the SUI token."
+                          },
+                          "source": {
+                            "type": "string",
+                            "description": "The source of the price information."
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request due to missing or invalid parameters."
+          },
+          "500": {
+            "description": "Internal server error."
+          }
+        }
+      }
     }
   },
   "tags": []
