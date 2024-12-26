@@ -5,7 +5,7 @@
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
   },
-  "openapi": "https://app.premai.io/api/schema/",
+  "openapi": "https://api-staging.getnimbus.io/mintlify.json",
   "favicon": "/favicon.svg",
   "colors": {
     "primary": "#0D9373",
