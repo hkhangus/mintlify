@@ -88,6 +88,7 @@
         "api-reference/endpoint/delete",
         "api-reference/endpoint/get-prepare",
         "api-reference/endpoint/get-sui",
+        "api-reference/endpoint/get-sui-2",
         "api-reference/endpoint/get-v1traces"
       ]
     }
