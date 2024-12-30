@@ -5,7 +5,7 @@
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
   },
-  "openapi": "https://api-staging.getnimbus.io/api-spec.json",
+  "openapi": "https://petstore3.swagger.io/api/v3/openapi.json",
   "favicon": "/favicon.svg",
   "colors": {
     "primary": "#0D9373",
