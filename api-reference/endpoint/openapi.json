@@ -17,7 +17,7 @@
     }
   ],
   "paths": {
-    "/tokenss/sui/price": {
+    "/tokens/sui/price": {
       "get": {
         "summary": "Retrieve SUI Token Price",
         "description": "Fetches the price of one or more SUI tokens for specified addresses and an optional timestamp.",
